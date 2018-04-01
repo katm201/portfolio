@@ -8,6 +8,7 @@ import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 
 import Header from '../Header';
+import BottomBar from '../BottomBar';
 
 const Home = () => (
   <section className="b-home">
@@ -16,6 +17,7 @@ const Home = () => (
     <section className="e-home-main">
       {'Home'}
     </section>
+    <BottomBar />
   </section>
 );
 

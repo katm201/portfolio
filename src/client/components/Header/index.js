@@ -1,6 +1,6 @@
 /*
  *
- * HEADER MAIN FILE
+ * HEADER COMPONENT
  *
  */
 
@@ -11,7 +11,7 @@ const Header = () => (
   <AppBar
     title={'Katherine Manning'}
     iconClassNameRight={'muidocs-icon-navigation-expand-more'}
-    secondary={'true'}
+    primary={'true'}
   />
 );
 
