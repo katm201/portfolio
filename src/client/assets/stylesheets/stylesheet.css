@@ -74,7 +74,7 @@ body {
 }
 
 .e-home-img {
-  background-image: url("../images/main-medium.jpeg");
+  background-image: url("../images/main-medium.png");
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,6 +123,6 @@ body {
 
 @media (min-width: 1000px) {
   .e-home-img {
-    background-image: url("../images/main-large.jpg");
+    background-image: url("../images/main-large.png");
   }
 }
