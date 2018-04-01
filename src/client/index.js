@@ -13,6 +13,7 @@ import { Provider } from 'react-redux';
 
 import Routes from './Routes';
 import reducers from './reducers';
+import './assets/stylesheets/stylesheet.css';
 
 const store = createStore(reducers, {}, applyMiddleware(thunk));
 
