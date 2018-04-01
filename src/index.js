@@ -6,23 +6,27 @@
 
 import express from 'express';
 import cors from 'cors';
-import { json } from 'body-parser'
+import { json } from 'body-parser';
 import { config } from 'dotenv';
+import useragent from 'express-useragent';
 
 import createStore from './helpers/store';
 import renderer from './helpers/renderer';
 
 config();
+
+global.navigator = { userAgent: 'all' };
+
 const app = express();
 
 app.use(express.static('public'));
 app.use(json());
 app.use(cors());
+app.use(useragent.express());
 
 app.get('*', (request, response) => {
   const store = createStore();
 
-  // initialize store with state
   response.send(renderer(request, store));
 });
 
