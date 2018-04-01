@@ -8,6 +8,11 @@
     "dev:build-server": "webpack --config webpack.server.js --watch",
     "dev:build-client": "webpack --config webpack.client.js --watch",
     "dev:start-server": "nodemon build/bundle.js",
+    "build:server": "webpack --config webpack.server.js",
+    "build:client": "webpack --config webpack.client.js",
+    "start:production": "node build/bundle.js",
+    "start": "npm run build:server && npm run build:client && npm run start:production",
+    "build": "npm-run-all build:*",
     "test": "jest"
   },
   "author": "Katherine Manning",

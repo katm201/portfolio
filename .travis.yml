@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 8.4.0
+before_script:
+- npm run build
+script: npm run start:production & npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: Wh0WfPefgV/zde6+H4TTsF/07+kSJAfveo+NPgNmWJEi9oa6jlwLEEcLs8L+y19GwetQgY8FwboAvki2RHu7vo/C03jWiowzrwmqEw0cCe0rEPtYuQgEJXTKEizPud9C5BJHSamJ7x7wBMzJte5mq+C7wdhmO7uKrocGqv4XBfLqaoV2z1yAlAA4d0spT/lFofUgUCzAjNZBjJe01ZdkgZUzBSf+dxzQkzU68ehf5Xb/ISwwO8wnE5sdNXYtt+Cg4zs9JRihHAWaCuPkz92SHMmxK7Nic2KZ95SqqLD4jVmXFTaOrfS+yGGUaVpy0TRBT69h1R8hdkAuhbNcvCdjga9nhHkJOz0y1/9WD5TTJ/mtcUIHgp6av2Ad2VE5BdJT+JEkAglhbXYCZEqL7sXsfsgtefAjrXBfKLCC94r+6/QXJLBsbsnzBF9IqnjjJFfVKTfFIemeeqHGSPBmTg9Y6zqKpPiRjCyMaj/8KFjPCE5+TEdyoIECFTiwQd4h6ft/bwTVG/eyyPy0l7Jn6nU7stqPun8XbpM99r+Ubkq5fF/7fMB4Fk96LhCrb/viXDu83yVgXX66PFmAxB8GtUWGrX49zDDo2Irv4d+iIhJTsGDn7CXpuit9vlTZrJUW+93qjiING39Ru8vh0hsb3wGtHIfWRfT1DPZjmT6AlPq26mQ=
+  app: katherine-portfolio-staging
+  on:
+    repo: katm201/portfolio
