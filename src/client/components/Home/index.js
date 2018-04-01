@@ -5,15 +5,17 @@
  */
 
 import React from 'react';
+import RaisedButton from 'material-ui/RaisedButton';
 
 const Home = () => (
   <div>
     <div>Home</div>
-    <button
+    <RaisedButton
       onClick={() => console.log('hello Home')}
+      secondary
     >
-      {'button'}
-    </button>
+      {'Button'}
+    </RaisedButton>
   </div>
 );
 
