@@ -15,8 +15,6 @@ import renderer from './helpers/renderer';
 
 config();
 
-global.navigator = { userAgent: 'all' };
-
 const app = express();
 
 app.use(express.static('public'));
