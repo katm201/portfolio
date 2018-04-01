@@ -10,8 +10,8 @@ import DropDownMenu from 'material-ui/DropDownMenu';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 
-const TopMenu = () => (
-  <Menu style={{ width: '90px' }}>
+const TopMenu = (props) => (
+  <Menu style={{ width: '90px' }} {...props}>
     <MenuItem primaryText="Home" />
     <MenuItem primaryText="Skills" />
     <MenuItem primaryText="Projects" />
