@@ -5,13 +5,12 @@
  */
 
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 
 import Header from '../Header';
 import BottomBar from '../BottomBar';
 
 const Home = () => (
-  <section className="b-home">
+  <section>
     <Header />
     <section className="e-home-img"></section>
     <section className="e-home-main">
