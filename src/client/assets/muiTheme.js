@@ -1,6 +1,10 @@
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
+/*
+ *
+ * MATERIAL UI THEME DEFINITIONS
+ *
+ */
 
-export default getMuiTheme({
+const palette = {
   palette: {
     primary1Color: '#0d47a1',
     primary2Color: '#5472d3',
@@ -13,8 +17,15 @@ export default getMuiTheme({
     canvasColor: '#fafafa',
     disabledColor: 'grey',
   },
-}, {
+}
+
+const avatar = {
   avatar: {
     borderColor: null,
   },
-});
+};
+
+export default {
+  palette,
+  avatar,
+}
