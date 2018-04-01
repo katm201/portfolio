@@ -7,10 +7,12 @@
 import express from 'express';
 import cors from 'cors';
 import { json } from 'body-parser'
+import { config } from 'dotenv';
 
 import createStore from './helpers/store';
 import renderer from './helpers/renderer';
 
+config();
 const app = express();
 
 app.use(express.static('public'));
@@ -24,6 +26,8 @@ app.get('*', (request, response) => {
   response.send(renderer(request, store));
 });
 
-app.listen(8080, () => {
-  console.log('Listening on port 8080');
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
