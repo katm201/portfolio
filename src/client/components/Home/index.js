@@ -12,6 +12,7 @@ const Home = () => (
     <div>Home</div>
     <RaisedButton
       onClick={() => console.log('hello Home')}
+      secondary
     >
       {'Button'}
     </RaisedButton>
