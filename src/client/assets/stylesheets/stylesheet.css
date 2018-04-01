@@ -80,12 +80,16 @@ body {
   background-size: cover;
   width: 100%;
   height: 400px;
+  position: relative;
 }
 
 .e-home-main {
   background-color: #0d47a1;
   height: 100%;
   width: 100%;
+  color: #fff;
+  padding: 5%;
+  position: relative;
 }
 
 .e-icon {
@@ -94,6 +98,21 @@ body {
 
 .m-divider {
   margin: 0 20px;
+}
+
+.m-header {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+.m-paragraph {
+  margin-bottom: 1.5em;
+}
+
+.m-small {
+  font-size: .75em;
+  position: absolute;
+  bottom: 1em;
 }
 
 /*
