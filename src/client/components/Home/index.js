@@ -7,16 +7,16 @@
 import React from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 
+import Header from '../Header';
+
 const Home = () => (
-  <div>
-    <div>Home</div>
-    <RaisedButton
-      onClick={() => console.log('hello Home')}
-      secondary
-    >
-      {'Button'}
-    </RaisedButton>
-  </div>
+  <section className="b-home">
+    <Header />
+    <section className="e-home-img"></section>
+    <section className="e-home-main">
+      {'Home'}
+    </section>
+  </section>
 );
 
 export default Home;

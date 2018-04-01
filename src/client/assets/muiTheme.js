@@ -4,11 +4,11 @@
  *
  */
 
-const palette = {
+export const palette = {
   palette: {
-    primary1Color: '#0d47a1',
-    primary2Color: '#5472d3',
-    primary3Color: '#002171',
+    primary1Color: '#002171',
+    primary2Color: '#0d47a1',
+    primary3Color: '#5472d3',
     accent1Color: '#e91e63',
     accent2Color: '#ff6090',
     accent3Color: '#b0003a',
@@ -19,13 +19,8 @@ const palette = {
   },
 }
 
-const avatar = {
+export const avatar = {
   avatar: {
     borderColor: null,
   },
 };
-
-export default {
-  palette,
-  avatar,
-}

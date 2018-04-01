@@ -16,8 +16,9 @@ import Routes from '../client/Routes';
 import { palette, avatar } from '../client/assets/muiTheme';
 
 export default function (request, store) {
+  const theme = getMuiTheme(palette, Object.assign(avatar, { userAgent: request.headers['user-agent'] }));
   const router = (
-    <MuiThemeProvider muiTheme={getMuiTheme(palette, avatar, { userAgent: request.headers['user-agent']})} >
+    <MuiThemeProvider muiTheme={theme} >
       <Provider store={store}>
         <StaticRouter location={request.path} context={{}}>
           <Routes />
