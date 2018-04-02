@@ -11,16 +11,17 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Routes from './Routes';
 import reducers from './reducers';
-import muiTheme from './assets/muiTheme';
+import { palette, avatar } from './assets/muiTheme';
 import './assets/stylesheets/stylesheet.css';
 
 const store = createStore(reducers, {}, applyMiddleware(thunk));
 
 hydrate(
-  <MuiThemeProvider muiTheme={muiTheme} >
+  <MuiThemeProvider muiTheme={getMuiTheme(palette, avatar)} >
     <Provider store={store}>
       <BrowserRouter>
         <Routes />
