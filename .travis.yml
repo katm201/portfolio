@@ -3,7 +3,7 @@ node_js:
 - 8.4.0
 before_script:
 - npm run build
-script: npm run start:production & npm test
+script: npm start & npm test
 deploy:
   provider: heroku
   api_key:
