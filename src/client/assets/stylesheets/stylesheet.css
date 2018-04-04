@@ -96,6 +96,10 @@ body {
   margin: 0 10px;
 }
 
+.e-icon:hover {
+  cursor: pointer;
+}
+
 .m-divider {
   margin: 0 20px;
 }

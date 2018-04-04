@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   module: {
     rules: [
@@ -12,6 +14,23 @@ module.exports = {
             ['env', { targets: { browsers: ['last 2 versions'] } }],
           ],
         },
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+        include: path.join(__dirname, 'src/client/assets/stylesheets/stylesheet.css'),
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+            },
+          },
+        ],
       },
     ],
   },

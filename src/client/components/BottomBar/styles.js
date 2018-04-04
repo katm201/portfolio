@@ -1,5 +1,6 @@
 const darkBlue = '#002171';
 const white = '#fff';
+const pink = '#b0003a';
 
 export default {
   separator: {
@@ -11,4 +12,8 @@ export default {
   title: {
     color: white,
   },
-}
+  icon: {
+    color: white,
+    hoverColor: pink,
+  },
+};
