@@ -5,19 +5,18 @@
  */
 
 import React from 'react';
-import AppBar from 'material-ui/AppBar';
+import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 
-import Menu from '../Menu';
+import NavMenu from '../NavMenu';
+import localStyle from './styles';
 
 const Header = () => (
-  <div>
-    <AppBar
-      title={'Katherine Manning'}
-      primary={'true'}
-      onLeftIconButtonClick={() => console.log('hello')}
-    />
-      {/* <Menu close={true} /> */}
-  </div>
+  <Toolbar style={localStyle.toolbar}>
+    <ToolbarGroup firstChild>
+      <NavMenu iconStyle={localStyle.icon} />
+      <ToolbarTitle text="Katherine Manning" style={localStyle.title} />
+    </ToolbarGroup>
+  </Toolbar>
 );
 
 export default Header;
