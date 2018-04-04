@@ -17,7 +17,7 @@ export const palette = {
     canvasColor: '#fafafa',
     disabledColor: 'grey',
   },
-}
+};
 
 export const avatar = {
   avatar: {
