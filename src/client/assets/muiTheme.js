@@ -3,7 +3,7 @@
  * MATERIAL UI THEME DEFINITIONS
  *
  */
-import { darken, lighten } from 'material-ui/utils/colorManipulator';
+import { darken, lighten, fade } from 'material-ui/utils/colorManipulator';
 
 export const themeInfo = {
   palette: {
@@ -23,6 +23,9 @@ export const themeInfo = {
 export const customizations = {
   avatar: {
     borderColor: null,
+  },
+  menuItem: {
+    hoverColor: fade(themeInfo.palette.accent1Color, 0.8),
   },
   toolbar: {
     backgroundColor: darken(themeInfo.palette.primary1Color, 0.1),
