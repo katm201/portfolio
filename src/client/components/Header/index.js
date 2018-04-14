@@ -8,13 +8,12 @@ import React from 'react';
 import { Toolbar, ToolbarGroup, ToolbarTitle } from 'material-ui/Toolbar';
 
 import NavMenu from '../NavMenu';
-import localStyle from './styles';
 
 const Header = () => (
-  <Toolbar style={localStyle.toolbar}>
+  <Toolbar>
     <ToolbarGroup firstChild>
-      <NavMenu iconStyle={localStyle.icon} />
-      <ToolbarTitle text="Katherine Manning" style={localStyle.title} />
+      <NavMenu />
+      <ToolbarTitle text="Katherine Manning" />
     </ToolbarGroup>
   </Toolbar>
 );

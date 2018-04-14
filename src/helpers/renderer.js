@@ -13,10 +13,10 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import template from './html-template';
 import Routes from '../client/Routes';
-import { palette, avatar } from '../client/assets/muiTheme';
+import { themeInfo, customizations } from '../client/assets/muiTheme';
 
 export default function (request, store) {
-  const theme = getMuiTheme(palette, Object.assign(avatar, { userAgent: request.headers['user-agent'] }));
+  const theme = getMuiTheme(themeInfo, Object.assign(customizations, { userAgent: request.headers['user-agent'] }));
   const router = (
     <MuiThemeProvider muiTheme={theme} >
       <Provider store={store}>

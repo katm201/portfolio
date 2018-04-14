@@ -15,13 +15,13 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 import Routes from './Routes';
 import reducers from './reducers';
-import { palette, avatar } from './assets/muiTheme';
+import { themeInfo, customizations } from './assets/muiTheme';
 import './assets/stylesheets/stylesheet.css';
 
 const store = createStore(reducers, {}, applyMiddleware(thunk));
 
 hydrate(
-  <MuiThemeProvider muiTheme={getMuiTheme(palette, avatar)} >
+  <MuiThemeProvider muiTheme={getMuiTheme(themeInfo, customizations)} >
     <Provider store={store}>
       <BrowserRouter>
         <Routes />
