@@ -9,8 +9,7 @@ import Popover from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/MenuItem';
 
-import { lightBlue } from '../../assets/muiTheme';
-import MenuIcon from './MenuIcon';
+import MenuIconButton from './MenuIconButton';
 import { handleClick, handleRequestClose } from './helpers';
 
 class NavMenu extends React.Component {
@@ -27,7 +26,7 @@ class NavMenu extends React.Component {
     const { open, anchorEl } = this.state;
     return (
       <div>
-        <MenuIcon hoverColor={lightBlue} onClick={this.handleClick} />
+        <MenuIconButton onClick={this.handleClick} />
         <Popover
           open={open}
           anchorEl={anchorEl}
