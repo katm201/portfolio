@@ -18,8 +18,8 @@ class NavMenu extends React.Component {
     this.state = {
       open: false,
     };
-    this.handleClick = this::handleClick;
-    this.handleRequestClose = this::handleRequestClose;
+    this.handleClick = handleClick.bind(this);
+    this.handleRequestClose = handleRequestClose.bind(this);
   }
 
   render() {
