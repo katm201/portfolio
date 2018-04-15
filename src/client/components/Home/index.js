@@ -13,7 +13,7 @@ const Home = () => (
   <section>
     <Header />
     <section className="e-home-img" />
-    <section className="e-home-main">
+    <section className="e-main m-home">
       <h1 className="m-header">
         {'Welcome'}
       </h1>

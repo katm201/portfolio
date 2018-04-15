@@ -83,13 +83,27 @@ body {
   position: relative;
 }
 
-.e-home-main {
+.e-main {
   background-color: #0d47a1;
-  height: 100%;
   width: 100%;
   color: #fff;
   padding: 5%;
   position: relative;
+}
+
+.m-home {
+  height: 70%;
+}
+
+.m-notfound {
+  height: 86%;
+}
+
+.m-center-icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .e-icon {
@@ -107,6 +121,10 @@ body {
 .m-header {
   font-size: 3em;
   margin-bottom: .5em;
+}
+
+.m-center {
+  text-align: center;
 }
 
 .m-paragraph {
