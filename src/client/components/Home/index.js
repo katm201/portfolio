@@ -12,7 +12,7 @@ import BottomBar from '../BottomBar';
 const Home = () => (
   <section>
     <Header />
-    <section className="e-home-img"></section>
+    <section className="e-home-img" />
     <section className="e-home-main">
       <h1 className="m-header">
         {'Welcome'}

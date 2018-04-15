@@ -1,4 +1,4 @@
-export default function(content) {
+export default function (content) {
   return `
     <html>
       <head>

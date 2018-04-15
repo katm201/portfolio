@@ -3,8 +3,9 @@
  * MATERIAL UI THEME DEFINITIONS
  *
  */
+import { darken, lighten, fade } from 'material-ui/utils/colorManipulator';
 
-export const palette = {
+export const themeInfo = {
   palette: {
     primary1Color: '#002171',
     primary2Color: '#0d47a1',
@@ -19,8 +20,23 @@ export const palette = {
   },
 };
 
-export const avatar = {
+export const customizations = {
   avatar: {
     borderColor: null,
   },
+  menuItem: {
+    hoverColor: fade(themeInfo.palette.accent1Color, 0.8),
+  },
+  toolbar: {
+    backgroundColor: darken(themeInfo.palette.primary1Color, 0.1),
+    height: 56,
+    titleFontSize: 20,
+    iconColor: themeInfo.palette.alternateTextColor,
+    separatorColor: themeInfo.palette.alternateTextColor,
+  },
+  svgIcon: {
+    color: themeInfo.palette.alternateTextColor,
+  },
 };
+
+export const lightBlue = lighten(themeInfo.palette.primary2Color, 0.2);
